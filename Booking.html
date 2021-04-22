@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <nav>
+        <span>Vikram cabs</span>
+    </nav>
+    <div>
+        <form onsubmit="getTripDetails()">
+            <h3>Details</h3>
+            <br>
+            <div>
+                <input type="date" name="journeyDate" min="2021-04-22" max="2021-04-30" id="journeyDate" required>
+                <br>
+                <label for="journeyDate">Journey Date</label>
+            </div>
+            <div>
+                <input type="time" name="pickUpTime" id="pickUpTime" required>
+                <br>
+                <label for="pickUpTime">Pick Up Time</label>
+            </div>
+            <div>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                <br>
+                <label for="dateOfBirth">Date of Birth</label>
+            </div>
+            <div>
+                <input type="checkbox" name="SeniorCitizen" id="isSeniorCitizen">
+                <label for="SeniorCitizen">SeniorCitizen</label>
+            </div>
+            <div>
+                <label>Gender</label>
+                <br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="gender">Male</label>
+                <br>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="gender">Female</label>
+                <br>
+            </div>
+            <button type="submit" id="bookBtn">Submit</button>
+        </form>
+    </div>
+    <script src="Booking.js"></script>
+</body>
+</html>
